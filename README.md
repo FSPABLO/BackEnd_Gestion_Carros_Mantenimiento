@@ -26,11 +26,29 @@ Los clientes envían/reciben JSON con `RequestDto` y `ResponseDto`.
 - Persistencia con Hibernate (entidades: `User`, `Car`, `Maintenance`, enum `MaintenanceType {REPAIR, MOD, ROUTINE}`).
 
 ## Estructura breve
--API/controllers/         AuthController, CarController, MaintenanceController
--DataAccess/services/     AuthService, CarService, MaintenanceService (Hibernate)
--Domain/models/           Entidades JPA + enum
--Domain/dtos/             RequestDto / ResponseDto + DTOs específicos
--Server/                  SocketServer, ClientHandler, MessageBroadcaster
+src/main/java/
+└─ org/example/
+├─ API/controllers/
+│  ├─ AuthController.java
+│  ├─ CarController.java
+│  └─ MaintenanceController.java
+├─ DataAccess/services/
+│  ├─ AuthService.java
+│  ├─ CarService.java
+│  └─ MaintenanceService.java
+├─ Domain/models/
+│  ├─ User.java
+│  ├─ Car.java
+│  ├─ Maintenance.java
+│  └─ MaintenanceType.java
+├─ Domain/dtos/
+│  ├─ RequestDto.java
+│  ├─ ResponseDto.java
+│  └─ (… DTOs específicos …)
+└─ Server/
+├─ SocketServer.java
+├─ ClientHandler.java
+└─ MessageBroadcaster.java
 
 ## Arranque rápido
 1. Configura `src/main/resources/hibernate.properties` con tu MySQL.
