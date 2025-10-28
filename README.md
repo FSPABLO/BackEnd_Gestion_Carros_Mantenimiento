@@ -1,5 +1,5 @@
 # BackEnd_Gestion_Carros_Mantenimiento
-# 🛠️ Backend – Java Sockets + Hibernate
+# Backend – Java Sockets + Hibernate
 
 ## ¿De qué trata?
 Servidor backend ligero que expone “endpoints” por **sockets** (no HTTP) para gestionar:
