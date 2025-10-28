@@ -27,11 +27,19 @@ Los clientes envían/reciben JSON con `RequestDto` y `ResponseDto`.
 
 ## Estructura Breve
 
-- `API/controllers/`: `AuthController.java`, `CarController.java`, `MaintenanceController.java`
-- `DataAccess/services/`: `AuthService.java`, `CarService.java`, `MaintenanceService.java`
-- `Domain/models/`: `User.java`, `Car.java`, `Maintenance.java`, `MaintenanceType.java`
-- `Domain/dtos/`: `RequestDto.java`, `ResponseDto.java`, … (DTOs específicos)
-- `Server/`: `SocketServer.java`, `ClientHandler.java`, `MessageBroadcaster.java`
+Carpeta
+Archivos / Propósito
+API/controllers
+AuthController, CarController, MaintenanceController
+DataAccess/services
+AuthService, CarService, MaintenanceService (Hibernate)
+Domain/models
+Entidades JPA (User, Car, Maintenance) + enum MaintenanceType
+Domain/dtos
+RequestDto / ResponseDto + DTOs específicos
+Server
+SocketServer, ClientHandler, MessageBroadcaster
+
 
 ## Arranque rápido
 1. Configura `src/main/resources/hibernate.properties` con tu MySQL.
