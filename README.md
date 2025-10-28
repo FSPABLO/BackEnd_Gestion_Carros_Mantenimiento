@@ -25,7 +25,8 @@ Los clientes envían/reciben JSON con `RequestDto` y `ResponseDto`.
   - `Maintenance`: `add`, `update`, `delete`, `get`, `list_by_car`
 - Persistencia con Hibernate (entidades: `User`, `Car`, `Maintenance`, enum `MaintenanceType {REPAIR, MOD, ROUTINE}`).
 
-## Estructura breve
+## Estructura Breve
+
 src/main/java/
 └─ org/example/
 ├─ API/controllers/
